@@ -23,7 +23,7 @@ Note! For this example, the sheets are called "Sheet1" and "Sheet2", you can nam
 1) Open Google sheets, the first sheet should be called 'Sheet1'. Once you have your sheet setup, with your data, create a new sheet to record your crypto daily values. You should now have 2 sheets (Sheet1 and Sheet2)
 2) Make a note of where your import value data is in Sheet1 (A1 etc)
 3) Click on Extensions, then select "Apps Script"
-4) On the new Window/Tab click the + button in the top right to create a new script. Select script.
+4) On the new Window/Tab click the + button in the top left to create a new script. Select script.
 5) Name your new script (I made mine relevant to my crypto - example "Daily Doge Value") then press enter to save
 6) On the right side, delete everything in the code block and paste this code. It is a good idea to specify a name for the function especially if you want to use it for more than 1 currency. You can do this in the first line of the script (example, the existing script name is ```function recordDailyValue() {``` I named mine ```function recordDailyValueDoge() {``` and ```function recordDailyValueCro() {``` for example). Remember to modify the code to specify which cells you want to use. Rename the sheets if you want specific names.
 7) Click the save icon (floppy disk)
