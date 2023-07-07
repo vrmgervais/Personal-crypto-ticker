@@ -33,7 +33,7 @@ Note! For this example, the sheets are called "Sheet1" and "Sheet2", you can nam
 11) Select the event source from drop down (Time-driven) then adjust to what suits you.
 12) Click save and that should be it.
 
-That should be all, I have gone further and added a trend marker next to my values which checks the previous days value and compares it to the current value to see if it has gone up or down. This code can be inserted into the following cell (below the last value) - ```=IFS(B3>B2,"⇧",B3<B2,"⇩",TRUE,"-")``` I have used ASCII characters for up & down values, you can use whatever you want by replacing them in this function.
+That should be all, I have gone further and added a trend marker next to my values which checks the previous days value and compares it to the current value to see if it has gone up or down. This code can be inserted into the following cell (below and right to the last value) - ```=IFS(B3>B2,"⇧",B3<B2,"⇩",TRUE,"-")``` I have used ASCII characters for up & down values, you can use whatever you want by replacing them in this function. My values are in column B, please change this function suit your needs. I will upload pictures to demostrate.
 
 You can then create a graph to capture your daily movements that will create something interesting in the coming days / weeks/ months / years etc.
 
