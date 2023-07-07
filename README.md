@@ -17,6 +17,7 @@ I am using Dogecoin for this example, please check online for your crypto coin n
 I have zero script skills, but knew it should be easy enough to produce something, so what I have done is used ChatGPT to create this code for use in Google sheets.
 
 * Steps
+
 Note! For this example, the sheets are called "Sheet1" and "Sheet2", you can name them according to your needs
 
 1) Open Google sheets, the first sheet should be called 'Sheet1'. Once you have your sheet setup, with your data, create a new sheet to record your crypto daily values. You should now have 2 sheets (Sheet1 and Sheet2)
