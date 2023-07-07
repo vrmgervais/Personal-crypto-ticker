@@ -1,6 +1,6 @@
-* Google sheets script
+# Google sheets script
 
-* Background:
+## Background:
 
 Google sheets has the ability to pull prices for the most popular crypto currencies, including Bitcoin, Ethereum, Litecoin, Cardano, and Binance Coin, but does not work with others such as Dogecoin etc.
 
@@ -12,11 +12,11 @@ I am using Dogecoin for this example, please check online for your crypto coin n
 
 ```=IMPORTDATA("https://cryptoprices.cc/DOGE/")```
 
-* Creating something interesting:
+## Creating something interesting:
 
 I have zero script skills, but knew it should be easy enough to produce something, so what I have done is used ChatGPT to create this code for use in Google sheets.
 
-* Steps
+## Steps
 
 Note! For this example, the sheets are called "Sheet1" and "Sheet2", you can name them according to your needs
 
