@@ -1,0 +1,31 @@
+function recordDailyValue() {
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var sourceSheet = spreadsheet.getSheetByName('Sheet1'); // Replace 'Sheet1' with the name of your source sheet
+  var targetSheet = spreadsheet.getSheetByName('Sheet2'); // Replace 'Sheet2' with the name of your target sheet
+  var targetColumn = 2; // Replace '2' with the desired target column number (e.g., 1 for column A, 2 for column B, and so on)
+  var currentValue = sourceSheet.getRange('A1').getValue(); // Replace 'A1' with the cell reference you want to record
+
+  var targetRow = getNextAvailableRow(targetSheet, targetColumn);
+  var targetRange = targetSheet.getRange(targetRow, targetColumn);
+  var dateCell = targetSheet.getRange(targetRow, targetColumn - 1); // Corresponding cell to the left of the target cell
+
+  targetRange.setValue(currentValue);
+  dateCell.setValue(new Date()); // Set the current date
+}
+
+function getNextAvailableRow(sheet, column) {
+  var columnValues = sheet.getRange(1, column, sheet.getMaxRows()).getValues();
+  var lastRowIndex = columnValues.reverse().findIndex(function(row) {
+    return row[0] !== '';
+  });
+
+  var nextAvailableRow;
+  if (lastRowIndex === -1) {
+    nextAvailableRow = 1;
+  } else {
+    nextAvailableRow = sheet.getMaxRows() - lastRowIndex + 1;
+  }
+
+  return nextAvailableRow;
+}
+
